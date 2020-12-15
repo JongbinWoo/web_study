@@ -1,0 +1,46 @@
+.main {
+    width: 100%;
+}
+.ads {
+    width: 100%;
+    height: 440px;
+    
+    background-image: url(https://d.line-scdn.net/stf/line-lp/Korean0906.png);
+}
+
+.contents {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.contents .contentsInner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ImgLeft, .ImgRight {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+
+
+
+.footer {
+    background-color: #444;
+    color: white;
+    font-weight: 100;
+}
+
+.footer-links-ul {
+    display:flex;
+
+}
+
+.footer-sns {
+    font-weight: 400;
+}

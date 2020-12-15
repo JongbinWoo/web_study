@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300:400,600");
+@import "header.css";
+@import "main.css";
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 1000px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}

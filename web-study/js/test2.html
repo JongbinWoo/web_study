@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body> 
+        <button onclick="buy(500)">Coffee(500)</button>
+        <button onclick="buy(1000)">Dezawa(1000)</button>
+        <button onclick="buy(300)">Water(300)</button>
+        <button onclick="getMoney()">Money(1000)</button>
+        <div id='Remain'></div>
+        <script>
+            let money = 1000;
+
+            function buy(price) {
+                if (checkMoney(price)) {
+                    
+                    return
+                }
+                money -= price;
+                print();
+            }
+            
+            function getMoney() {
+                
+                money += 1000;
+                print();
+
+            }
+
+            function checkMoney(price) {
+                if (price > money) {
+                    alert('NO MONEY!!');
+                    return true
+                }
+            }
+            
+            function print() {
+                
+                document.getElementById('Remain').innerHTML = 'Current money : '+ money;
+            }
+            print()
+        </script>
+    </body>
+</html>

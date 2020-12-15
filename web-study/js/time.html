@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div id='time'></div>
+        <script>
+            string = new Date().toLocaleDateString();
+            string = string.split('/')
+            // string = string.reverse()
+            // string = string[].concat()
+            string = string.join('-')
+            const num = new Date().getDay();
+            let day;
+            switch (num) {
+                case 1:
+                    day = 'mon';
+                    break;
+                case 2:
+                    day = 'thu';
+                    break;
+                case 3:
+                    day = 'wen';
+                    break; 
+                case 4: 
+                    day = 'thur';
+                    break; 
+                case 5: 
+                    day = 'fri';
+                    break; 
+                case 6: 
+                    day = 'sat';
+                    break; 
+                case 7:
+                    day = 'sun';
+                    break;
+            }
+
+            document.getElementById('time').innerHTML = string + day;
+        </script>
+    </body>
+</html>
